@@ -13,6 +13,6 @@ class DataBaseHelper {
   late final Database dataBase;  
 
   Future<void> init() async {
-    _appDocumentDirectory = await 
+    _appDocumentDirectory = await path_provider.getApplicationDocumentsDirectory();
   } 
 }
